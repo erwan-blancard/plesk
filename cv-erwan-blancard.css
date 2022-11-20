@@ -1,0 +1,60 @@
+body {
+	font: 1em sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-size: 44px;
+}
+
+.container {
+	display: grid;
+	rid-template: auto 1fr auto / auto 1fr auto;
+}
+
+img {
+	border-radius: 50px 50px 50px 50px;
+	border: solid;
+	border-color: whitesmoke;
+}
+
+header {
+	
+	grid-column: 1 / 4;
+	background: limegreen;
+}
+
+.rect_left {
+	background: lightgreen;
+	grid-column: 1 / 2;
+}
+
+.div_rect_left {
+	background: lightgreen;
+	margin: 24px;
+}
+
+.rect_middle {
+	background: whitesmoke;
+	grid-column: 2 / 3;
+}
+
+.rect_right {
+	background: whitesmoke;
+	grid-column: 3 / 4;
+}
+
+.div_rect_right {
+	background: whitesmoke;
+	margin: 24px;
+}
+
+footer {
+	background: lightgray;
+	grid-column: 1 / 4;
+}
+
+.rect_bottom {
+	background: lightgray;
+	margin: 24px;
+}

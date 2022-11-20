@@ -1,0 +1,531 @@
+body {
+	font-family: 'Droid Sans', arial, serif;
+}
+
+
+/* SHARED HEADER MENU BAR */
+
+.div_logo {
+	text-align: center;
+}
+
+nav {
+    width: 100%;
+    margin: -20px auto;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li {
+    float: left;
+    width: 12%;		/* 25% */
+    text-align: center;
+    position: relative;
+}
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+nav a:hover{
+    color: #336699;
+    border-bottom: 3px solid #336699;
+}
+.sub-menu{
+    display: none;
+    box-shadow: 0px 2px 4px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sub-menu{
+    display: block;
+}
+.sub-menu li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sub-menu a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sub-menu a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.menu-container > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+/* offset next tag to prevent tag offset */
+.blankspace {
+	margin: 30px 20px;
+}
+
+/* END SHARED HEADER MENU BAR */
+
+
+
+/* SHARED FOOTER SECTION */
+
+footer {
+	background-color: #313131;
+	margin: -12px;
+}
+
+.footer_container {
+	font-size: 0.9em;
+	color: whitesmoke;
+
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.socials {
+	margin: 10px;
+	display: flex;
+	gap: 7px;
+}
+
+
+/* makes links in footer_container white with no underline */
+.footer_container a:link { text-decoration: none; color: whitesmoke; }
+.footer_container a:visited { text-decoration: none; color: whitesmoke; }
+.footer_container a:hover { text-decoration: none; color: whitesmoke; }
+.footer_container a:active { text-decoration: none; color: whitesmoke; }
+
+/* END SHARED FOOTER SECTION */
+
+
+
+
+/* accueil.html */
+
+.acc_main {
+	margin: 0px -12px;
+	background-color: #336699;
+}
+
+.acc_desc {
+	display: flex;
+	gap: 0px;
+	justify-content: center;
+}
+
+.acc_desc_container {
+	font-family: 'Open Sans', sans-serif;
+	margin: 50px 50px;
+	font-size:32px;
+	color: white;
+	text-align: center;
+}
+
+.acc_signup_button {
+	background-color:#ff2063;
+	border-radius: 30px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:48px;
+	font-weight:bold;
+	padding:10px 23px;
+	text-decoration:none;
+	text-shadow:0px 4px 0px black;
+}
+
+.acc_formations {
+	background-color: whitesmoke;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+.acc_formations_flex {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 50px;
+}
+
+.acc_flex_item {
+	width: 26%;
+	height: 700px;
+	background-color: white;
+	box-shadow: 2px 2px 2px gray;
+	color: #275fa0;
+	border-radius: 15px;
+}
+
+.acc_goto_button {
+	background-color:#ffca4b;
+	border-radius: 20px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding: 15px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px black;
+	box-shadow: 2px 2px 2px gray;
+}
+
+.acc_formations_flex_down {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	flex-direction: column;
+}
+
+.acc_container_layout {
+	margin: 25px;
+}
+
+.acc_flex_item_long {
+	width: 85%;
+	height: 200px;
+	background-color: white;
+	box-shadow: 2px 2px 2px gray;
+	color: #275fa0;
+	border-radius: 20px;
+}
+
+.acc_videos {
+	text-align: center;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.acc_videos_layout {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 30px;
+}
+
+/* end accueil.html */
+
+/* qui-sommes-nous.html */
+
+.qsn_main { margin: 40px -12px; }
+.qsn_title { text-align: center;  }
+.qsn_desc { display: flex; justify-content: space-evenly; }
+.qsn_desc_text { width: 30%; height: auto; }
+
+/* makes links in aws_desc white with no underline */
+.qsn_desc_text a:link { text-decoration: none; color: #000000; }
+.qsn_desc_text a:visited { text-decoration: none; color: #000000; }
+.qsn_desc_text a:hover { text-decoration: none; color: #000000; }
+.qsn_desc_text a:active { text-decoration: none; color: #000000; }
+
+.qsn_formation_text { width: 15%; height: auto; }
+.sponsors_container { margin: 50px; background-color: whitesmoke; box-shadow: 2px 2px 2px gray; }
+.qsn_videos { display: flex; justify-content: space-evenly; }
+#sponsors_1 { display: flex; justify-content: center; gap: 7px; }
+#sponsors_2 { display: flex; justify-content: center; gap: 7px; }
+#sponsors_3 { display: flex; justify-content: center; gap: 7px; }
+#sponsors_4 { display: flex; justify-content: center; gap: 7px; }
+#sponsors_5 { display: flex; justify-content: center; gap: 7px; }
+
+/* end qui-sommes-nous.html */
+
+/* news.html */
+
+.news_main {
+	margin: 0px -12px;
+	background-color: #336699;
+}
+
+.news_container {
+	background-color: whitesmoke;
+	display: flex;
+	justify-content: space-evenly;
+	gap: 30px;
+}
+
+.news_article {
+	background-color: white;
+	width: 384px;
+	height: 512px;
+}
+
+.news_article:hover {
+	box-shadow: 1px 1px 8px #555;
+}
+
+.news_video {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+/* end news.html */
+
+/* aws-restart.html */
+
+.aws_main {
+	margin: 40px -12px;
+}
+
+.aws_banner_container {
+	height: 480px;
+	background-image: url(assets/aws.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.aws_banner_layout {
+	color: white;
+	font-size: 30px;
+	margin: 0px 16%;
+}
+
+.aws_desc {
+	margin: 0px 16%;
+	display: flex;
+	justify-content: space-evenly;
+	gap: 30px;
+}
+
+/*
+.aws_signup {
+	text-align: center;
+	height: 140px;
+}
+*/
+
+.aws_submit_button {
+	background-color:#e17b32;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:10px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+.aws_desc_formation {
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.aws_desc_pics {
+	text-align: center;
+	margin: -60px -12px;
+	background-color: #e17b32;
+}
+
+.aws_desc_pics_flex {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	text-align: left;
+	margin: 60px;
+}
+
+.aws_pics_container {
+	width: 26%;
+	height: auto;
+	background-color: whitesmoke;
+}
+
+.aws_form_container {
+	color: white;
+	height: 600px;
+	margin: -22px -12px;
+	background-color: black;
+	text-align: center;
+}
+
+/* makes links in aws_desc white with no underline */
+.aws_desc a:link { text-decoration: none; color: #f65500; }
+.aws_desc a:visited { text-decoration: none; color: #f65500; }
+.aws_desc a:hover { text-decoration: none; color: #f65500; }
+.aws_desc a:active { text-decoration: none; color: #f65500; }
+
+/* end aws-restart.html */
+
+/* contact.html */
+
+.contact_main { margin: 40px -12px -16px; background-color: #88c1d0; }
+.contact_rect_form {
+	width: 80%; height: auto;
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 5px 5px 5px gray;
+}
+.contact_title {
+	text-align: center; font-family: 'Open Sans', sans-serif;
+	color: #ffffff;
+}
+.contact_title_form { text-align: center; font-family: 'Open Sans'; color: #275fa0; }
+.contact_form_content div { margin: 0px 25%; }
+.contact_submit_button {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3; border-radius:8px; display:inline-block;
+	cursor:pointer; color:#ffffff; font-family:Arial; font-size:20px;
+	font-weight:bold; padding:13px 32px; text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.contact_submit_button:hover { background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%); background-color:#408c99; }
+.contact_submit_button:active { position:relative; top:1px; }
+.contact_infos { margin: 0px 20%; text-align: center; }
+
+/* makes links in PDF_link white with no underline */
+.PDF_link a:link { text-decoration: none; color: #275fa0; }
+.PDF_link a:visited { text-decoration: none; color: #275fa0; }
+.PDF_link a:hover { text-decoration: none; color: #275fa0; }
+.PDF_link a:active { text-decoration: none; color: #275fa0; }
+
+/* end contact.html */
+
+/* plateforme-start.html */
+
+.lps_main {
+	margin: 40px -12px;
+}
+
+.lps_title_box {
+	background-color: #ffe75f;
+	text-align: center;
+}
+
+.lps_title_box_layout {
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+}
+
+.lps_title_w_box {
+	font-size: 32px;
+	border-color: black;
+	border-style: solid;
+	border-width: 5px;
+	padding: 5px 5px;
+	display: inline;
+	background-color: white;
+}
+
+.lps_title_desc {
+	display: flex;
+	justify-content: center;
+	gap: 26px;
+}
+
+.lps_title_desc_item {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.lps_desc {
+	display: flex;
+	justify-content: center;
+	gap: 60px;
+}
+
+.lps_desc_item {
+	width: 33%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.lps_form_button {
+	background-color:#000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:10px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+#lps_form_container {
+	color: white;
+	height: 720px;
+	margin: -22px -12px;
+	background-color: black;
+	text-align: center;
+}
+
+.lps_submit_button {
+	background-color:#e17b32;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:10px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+.lps_formation {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+}
+
+.lps_future {
+	display: flex;
+	justify-content: center;
+	gap: 70px;
+}
+
+.lps_future_item {
+	width: 22%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.lps_yellow_box {
+	width: 33%;
+	background-color: #ffe85f;
+}
+
+/* makes links in lps_yellow_box white with no underline */
+.lps_yellow_box a:link { text-decoration: none; color: #275fa0; }
+.lps_yellow_box a:visited { text-decoration: none; color: #275fa0; }
+.lps_yellow_box a:hover { text-decoration: none; color: #275fa0; }
+.lps_yellow_box a:active { text-decoration: none; color: #275fa0; }
+
+.lps_ask {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+}
+
+.lps_ask_item {
+	width: 33%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+/* end plateforme-start.html */
